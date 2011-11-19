@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>PBNotify Changes</title>
+    <link>http://yushi.github.com/PBNotify/appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>
+
+    <item>
+      <title>Version 1.0</title>
+      <sparkle:releaseNotesLink>
+        http://yushi.github.com/PBnotify/changes/1.0.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Sat, 19 Nov 2011 22:00:00 +0900</pubDate>
+      <enclosure url="https://github.com/downloads/yushi/PBNotify/PBNotify-v1.0.zip" sparkle:version="1.0" sparkle:shortVersionString="1" sparkle:dsaSignature="MC0CFQCyDaCLavSlshab727GJnbMAN61wQIUUX4clbxZDXfknNwfD/OdYjzs/ws=" length="2184352" type="application/octet-stream" />
+    </item>
+    
+  </channel>
+</rss>
