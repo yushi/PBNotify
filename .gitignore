@@ -1,0 +1,5 @@
+pbnotify.xcodeproj/project.xcworkspace/xcuserdata/
+pbnotify.xcodeproj/xcuserdata/
+build/*
+.swp
+.DS_Store
