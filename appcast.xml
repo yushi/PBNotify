@@ -9,7 +9,7 @@
     <item>
       <title>Version 1.0</title>
       <sparkle:releaseNotesLink>
-        http://yushi.github.com/PBnotify/changes/1.0.html
+        http://yushi.github.com/PBNotify/changes/1.0.html
       </sparkle:releaseNotesLink>
       <pubDate>Sat, 19 Nov 2011 22:00:00 +0900</pubDate>
       <enclosure url="https://github.com/downloads/yushi/PBNotify/PBNotify-v1.0.zip" sparkle:version="1.0" sparkle:shortVersionString="1" sparkle:dsaSignature="MCwCFHBMfheW78/ySdpSTWd5Q0992PClAhQk2GHly524SAiHq1YBAOkeeGfnfg==" length="2184351" type="application/octet-stream" />
@@ -17,7 +17,7 @@
     <item>
       <title>Version 1.1</title>
       <sparkle:releaseNotesLink>
-        http://yushi.github.com/PBnotify/changes/1.1.html
+        http://yushi.github.com/PBNotify/changes/1.1.html
       </sparkle:releaseNotesLink>
       <pubDate>Fri, 30 Dec 2011 14:00:00 +0900</pubDate>
       <enclosure url="https://github.com/downloads/yushi/PBNotify/PBNotify-v1.1.zip" sparkle:version="1.1" sparkle:shortVersionString="1" sparkle:dsaSignature="MC0CFBy3/PnfZm74qyYneg0JcwTih6rMAhUArrL14ejxICkrHnKE+C7nyfyqBHY=" length="2184443" type="application/octet-stream" />
