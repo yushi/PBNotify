@@ -22,6 +22,14 @@
 @synthesize ignoreMouseButton = _ignoreMouseButton;
 @synthesize opacitySlider = _opacitySlider;
 
+static NSString *frameName = @"notifyWindow";
+
+- (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)application
+{
+    [_window saveFrameUsingName:frameName];
+    return YES;
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     setting = [[Setting alloc] init];
@@ -197,6 +205,7 @@
 
 - (void)enableShowWindow:(_Bool)enable ui:(id)ui{
     [ui setState:[self boolToState:enable]];
+    [_window setFrameUsingName:frameName];
     [_window setIsVisible:enable];
     [_allwaysOnTopButton setEnabled:enable];
     [_ignoreMouseButton setEnabled:enable];
