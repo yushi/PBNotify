@@ -79,7 +79,7 @@
 		D1E80152146A86E000C39719 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D1E80153146A86E000C39719 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D1E80154146A86E000C39719 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D1E80157146A86E000C39719 /* PBNotify-Info.plist */ = {isa = PBXFileReference; path = "PBNotify-Info.plist"; sourceTree = "<group>"; };
+		D1E80157146A86E000C39719 /* PBNotify-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PBNotify-Info.plist"; sourceTree = "<group>"; };
 		D1E80159146A86E000C39719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D1E8015B146A86E000C39719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D1E8015D146A86E000C39719 /* pbgrowl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pbgrowl-Prefix.pch"; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		D1E80165146A86E000C39719 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D1E8016C146A86E000C39719 /* PBNotifyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PBNotifyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E8016D146A86E000C39719 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D1E80174146A86E000C39719 /* PBNotifyTests-Info.plist */ = {isa = PBXFileReference; path = "PBNotifyTests-Info.plist"; sourceTree = "<group>"; };
+		D1E80174146A86E000C39719 /* PBNotifyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PBNotifyTests-Info.plist"; sourceTree = "<group>"; };
 		D1E80176146A86E000C39719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D1E80178146A86E000C39719 /* pbnotifyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pbnotifyTests.h; sourceTree = "<group>"; };
 		D1E80179146A86E000C39719 /* pbnotifyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pbnotifyTests.m; sourceTree = "<group>"; };
