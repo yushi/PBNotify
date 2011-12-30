@@ -15,6 +15,8 @@ mv build/Release/PBNotify.app .
 zip -r $ZIPPED PBNotify.app
 rm -rf ./PBNotify.app
 echo -e "\nsuccess. created ./${ZIPPED}"
+echo "REMEMBER: chechout gh-pages"
+echo "REMEMBER: edit index.html"
 echo "REMEMBER: edit changes/$VER.html"
 echo "REMEMBER: edit appcast.xml"
 ls -al $ZIPPED|awk '{print $5}'
