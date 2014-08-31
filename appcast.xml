@@ -22,6 +22,13 @@
       <pubDate>Fri, 30 Dec 2011 14:00:00 +0900</pubDate>
       <enclosure url="https://github.com/downloads/yushi/PBNotify/PBNotify-v1.1.zip" sparkle:version="1.1" sparkle:shortVersionString="1" sparkle:dsaSignature="MC0CFBy3/PnfZm74qyYneg0JcwTih6rMAhUArrL14ejxICkrHnKE+C7nyfyqBHY=" length="2184443" type="application/octet-stream" />
     </item>
-    
+    <item>
+      <title>Version 1.2</title>
+      <sparkle:releaseNotesLink>
+        http://yushi.github.com/PBNotify/changes/1.2.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Sun, 31 Aug 2014 21:57:00 +0900</pubDate>
+      <enclosure url="https://github.com/yushi/PBNotify/releases/download/v1.2/PBNotify-v1.2.zip" sparkle:version="1.2" sparkle:shortVersionString="1" sparkle:dsaSignature="MC0CFHNuhecIUJgqLA+l7mB6Pm/b1ay4AhUAhKl91SvajR0iG8ceCyxGMkWofYU=" length="2187123" type="application/octet-stream" />
+    </item>
   </channel>
 </rss>
