@@ -18,6 +18,7 @@
 -(bool)isAllwaysOnTop;
 -(bool)isShowWindow;
 -(bool)isIgnoreMouse;
+-(bool)isNotificationCenterEnabled;
 -(bool)isGrowlEnabled;
 
 //setter
@@ -25,6 +26,7 @@
 -(void)setIsAllowOnTop:(bool)enable;
 -(void)setIsShowWindow:(bool)enable;
 -(void)setIsIgnoreMouse:(bool)enable;
+-(void)setIsNotificationCenterEnabled:(bool)enable;
 -(void)setIsGrowlEnabled:(bool)enable;
 -(void)setBool:(_Bool)enable forKey:(NSString*)key;
 

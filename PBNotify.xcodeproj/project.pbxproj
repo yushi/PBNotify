@@ -15,6 +15,7 @@
 		D17D22B8146B6A3900E6166E /* PBWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D17D22B7146B6A3900E6166E /* PBWatcher.m */; };
 		D183AF6A14741723003F4FF0 /* Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = D183AF6914741723003F4FF0 /* Notifier.m */; };
 		D19668D31472A90000E3D745 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = D19668D21472A90000E3D745 /* Setting.m */; };
+		D1A3F31519B2088700994F2A /* NotificationCenterNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A3F31419B2088700994F2A /* NotificationCenterNotifier.m */; };
 		D1D3454114771C12000D0D4C /* pbnotify.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D1D3454014771C12000D0D4C /* pbnotify.tiff */; };
 		D1D34543147775C0000D0D4C /* pbnotify.icns in Resources */ = {isa = PBXBuildFile; fileRef = D1D34542147775C0000D0D4C /* pbnotify.icns */; };
 		D1E20EA714721D2D00CAA580 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20EA614721D2D00CAA580 /* Sparkle.framework */; };
@@ -70,6 +71,8 @@
 		D183AF6914741723003F4FF0 /* Notifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notifier.m; sourceTree = "<group>"; };
 		D19668D11472A90000E3D745 /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
 		D19668D21472A90000E3D745 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		D1A3F31319B2088700994F2A /* NotificationCenterNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCenterNotifier.h; sourceTree = "<group>"; };
+		D1A3F31419B2088700994F2A /* NotificationCenterNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCenterNotifier.m; sourceTree = "<group>"; };
 		D1D3454014771C12000D0D4C /* pbnotify.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = pbnotify.tiff; sourceTree = "<group>"; };
 		D1D34542147775C0000D0D4C /* pbnotify.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pbnotify.icns; sourceTree = "<group>"; };
 		D1E20EA614721D2D00CAA580 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				D1E80162146A86E000C39719 /* AppDelegate.m */,
 				D183AF6814741723003F4FF0 /* Notifier.h */,
 				D183AF6914741723003F4FF0 /* Notifier.m */,
+				D1A3F31319B2088700994F2A /* NotificationCenterNotifier.h */,
+				D1A3F31419B2088700994F2A /* NotificationCenterNotifier.m */,
 				D157E738146D3B4D00F4A6A5 /* GrowlNotifier.h */,
 				D157E739146D3B4D00F4A6A5 /* GrowlNotifier.m */,
 				D157E73B146D421800F4A6A5 /* WindowNotifier.h */,
@@ -342,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A3F31519B2088700994F2A /* NotificationCenterNotifier.m in Sources */,
 				D1E8015C146A86E000C39719 /* main.m in Sources */,
 				D1E80163146A86E000C39719 /* AppDelegate.m in Sources */,
 				D17D22B8146B6A3900E6166E /* PBWatcher.m in Sources */,

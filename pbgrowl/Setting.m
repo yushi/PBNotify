@@ -10,6 +10,7 @@
 static NSString* KEY_OPACITY = @"opacity";
 static NSString* KEY_SHOW_WINDOW = @"showWindow";
 static NSString* KEY_ALLWAYS_ON_TOP = @"allwaysOnTop";
+static NSString* KEY_NOTIFICATION_CENTER = @"notification_center";
 static NSString* KEY_GROWL = @"growl";
 static NSString* KEY_IGNORE_MOUSE = @"ignoreMouse";
 
@@ -21,6 +22,7 @@ static NSString* KEY_IGNORE_MOUSE = @"ignoreMouse";
     [defaultDict setObject:@"100" forKey:KEY_OPACITY];
     [defaultDict setObject:@"YES" forKey:KEY_SHOW_WINDOW];
     [defaultDict setObject:@"NO" forKey:KEY_ALLWAYS_ON_TOP];
+    [defaultDict setObject:@"NO" forKey:KEY_NOTIFICATION_CENTER];
     [defaultDict setObject:@"NO" forKey:KEY_GROWL];
     [defaultDict setObject:@"NO" forKey:KEY_IGNORE_MOUSE];
     [defaults registerDefaults:defaultDict];
@@ -43,6 +45,10 @@ static NSString* KEY_IGNORE_MOUSE = @"ignoreMouse";
     return [defaults boolForKey:KEY_IGNORE_MOUSE];
 }
 
+-(bool)isNotificationCenterEnabled{
+    return [defaults boolForKey:KEY_NOTIFICATION_CENTER];
+}
+
 -(bool)isGrowlEnabled{
     return [defaults boolForKey:KEY_GROWL];
 }
@@ -62,6 +68,10 @@ static NSString* KEY_IGNORE_MOUSE = @"ignoreMouse";
 
 -(void)setIsIgnoreMouse:(_Bool)enable{
     [self setBool:enable forKey:KEY_IGNORE_MOUSE];
+}
+
+-(void)setIsNotificationCenterEnabled:(_Bool)enable{
+    [self setBool:enable forKey:KEY_NOTIFICATION_CENTER];
 }
 
 -(void)setIsGrowlEnabled:(_Bool)enable{

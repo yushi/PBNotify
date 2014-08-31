@@ -13,6 +13,7 @@
 @synthesize window = _window;
 @synthesize preferences = _preferences;
 @synthesize menu = _menu;
+@synthesize enableNotificationCenterButton = _enableNotificationCenterButton;
 @synthesize enableGrowlButton = _enableGrowlButton;
 @synthesize toggleWindowButton = _toggleWindowButton;
 @synthesize allwaysOnTopButton = _allwaysOnTopButton;
@@ -52,6 +53,7 @@ static NSString *frameName = @"notifyWindow";
     [NSThread detachNewThreadSelector:@selector(run:)
                              toTarget:[AppDelegate class] withObject:pbw];
     [self enableGrowl:[setting isGrowlEnabled] ui:_enableGrowlButton];
+    [self enableNotificationCenter:[setting isNotificationCenterEnabled] ui:_enableNotificationCenterButton];
 }
 
 -(void)setupStatusMenu{
@@ -64,6 +66,9 @@ static NSString *frameName = @"notifyWindow";
 }
 
 -(void)setupAction{
+    [_enableNotificationCenterButton setTarget:self];
+    [_enableNotificationCenterButton setAction:@selector(enableNotificationCenterNotificationClicked:)];
+
     [_enableGrowlButton setTarget:self];
     [_enableGrowlButton setAction:@selector(enableGrowlNotificationClicked:)];
     
@@ -105,8 +110,15 @@ static NSString *frameName = @"notifyWindow";
     }
     
     [self ignoreMouse:[setting isIgnoreMouse] ui:_ignoreMouseButton];
-    
+
+    [self enableNotificationCenter:[setting isNotificationCenterEnabled] ui:_enableNotificationCenterButton];
     [self enableGrowl:[setting isGrowlEnabled] ui:_enableGrowlButton];
+}
+
+- (void)enableNotificationCenterNotificationClicked:(id)sender{
+    int state = (int)[sender state];
+    [self enableNotificationCenter:[self stateToBool:state]
+                   ui:sender];
 }
 
 - (void)enableGrowlNotificationClicked:(id)sender{
@@ -166,6 +178,11 @@ static NSString *frameName = @"notifyWindow";
                    ui:sender];
 }
 
+- (NotificationCenterNotifier*)getNotificationCenterNotifier{
+    NotificationCenterNotifier* nn = [[NotificationCenterNotifier alloc] init];
+    return nn;
+}
+
 - (GrowlNotifier*)getGrowlNotifier{
     GrowlNotifier* gn = [[GrowlNotifier alloc] init];
     if(![gn setup]){
@@ -178,6 +195,17 @@ static NSString *frameName = @"notifyWindow";
 - (WindowNotifier*)getWindowNotifier{
     WindowNotifier* wn = [[WindowNotifier alloc] initWithTextField:_pasteboardTextField];
     return wn;
+}
+
+- (void)enableNotificationCenter:(_Bool)enable ui:(id)ui{
+    if(enable){
+        [pbw addNotifier:[self getNotificationCenterNotifier]];
+        [pbw notifyAll];
+    }else{
+        [pbw removeNotifiersByType:@"notification_center"];
+    }
+    [ui setState:[self boolToState:enable]];
+    [setting setIsNotificationCenterEnabled:enable];
 }
 
 - (void)enableGrowl:(_Bool)enable ui:(id)ui{
